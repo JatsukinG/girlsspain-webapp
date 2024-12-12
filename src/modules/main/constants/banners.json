@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "firstName": "Ana",
+    "lastName": "García",
+    "image": "https://webdesign-finder.com/ubella/wp-content/uploads/2018/10/model_img_14-500x625.jpg",
+    "age": 25,
+    "height": "1.75m",
+    "weight": "60kg",
+    "eyesColor": "Marrones",
+    "hairColor": "Negro",
+    "measures": [
+      90,
+      60,
+      90
+    ]
+  },
+  {
+    "id": 2,
+    "firstName": "Juana",
+    "lastName": "Pérez",
+    "image": "https://webdesign-finder.com/ubella/wp-content/uploads/2018/10/model_img_15-500x625.jpg",
+    "age": 30,
+    "height": "1.80m",
+    "weight": "75kg",
+    "eyesColor": "Azules",
+    "hairColor": "Castaño",
+    "measures": [
+      95,
+      70,
+      95
+    ]
+  },
+  {
+    "id": 3,
+    "firstName": "Lucía",
+    "lastName": "Martínez",
+    "image": "https://webdesign-finder.com/ubella/wp-content/uploads/2018/10/model_img_12-500x625.jpg",
+    "age": 22,
+    "height": "1.68m",
+    "weight": "55kg",
+    "eyesColor": "Verdes",
+    "hairColor": "Rubio",
+    "measures": [
+      85,
+      58,
+      87
+    ]
+  },
+  {
+    "id": 4,
+    "firstName": "Carla",
+    "lastName": "Gómez",
+    "image": "https://webdesign-finder.com/ubella/wp-content/uploads/2018/10/model_img_16-500x625.jpg",
+    "age": 28,
+    "height": "1.82m",
+    "weight": "80kg",
+    "eyesColor": "Grises",
+    "hairColor": "Negro",
+    "measures": [
+      100,
+      75,
+      98
+    ]
+  }
+]
