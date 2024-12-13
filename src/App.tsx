@@ -1,10 +1,13 @@
 import { RouterProvider } from 'react-router'
+import NiceModal from '@ebay/nice-modal-react'
 import router from './router'
 
 function App() {
   return (
       <>
-        <RouterProvider router={router}/>
+        <NiceModal.Provider>
+          <RouterProvider router={router}/>
+        </NiceModal.Provider>
       </>
   )
 }

@@ -11,7 +11,7 @@ const TopModels = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
                     {
                         models.map(model => (
-                            <ModelCard model={model}/>
+                            <ModelCard key={model.id} model={model}/>
                         ))
                     }
                 </div>
