@@ -45,7 +45,7 @@ const ModelImagesModal: FC<Props> = NiceModal.create(({}) => {
                     Carla Gomez
                   </Dialog.Title>
                   <div className="mt-2 m-auto">
-                    <img src="/images/models/image2.jpg" alt="model" className="h-[70vh] w-auto"/>
+                    <img src="/images/models/image2.jpg" alt="model" className="h-auto md:h-[70vh] w-full md:w-auto"/>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

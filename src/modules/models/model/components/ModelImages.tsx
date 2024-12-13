@@ -33,7 +33,7 @@ const images: Image[] = [
 const ModelImages = () => {
   return (
       <section className="container">
-        <div className="columns-3 gap-4 space-y-4">
+        <div className="columns-2 md:columns-3 gap-4 space-y-4">
           {
             images.map(image => (
                 <img

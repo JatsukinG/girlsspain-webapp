@@ -18,7 +18,7 @@ const model: ModelNode = {
 const ModelInfo = () => {
   return (
       <section className="container mx-auto p-8">
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-1 md:grid-cols-5">
           <div className="col-span-2">
             <img
                 src={model.image}
