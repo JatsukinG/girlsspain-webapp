@@ -1,4 +1,5 @@
 export interface ModelNode {
+  id: number
   firstName: string
   lastName: string
   image: string
@@ -8,4 +9,9 @@ export interface ModelNode {
   eyesColor: string
   hairColor: string
   measures: number[]
+}
+
+export interface BannerNode {
+  id: number
+  image: string
 }

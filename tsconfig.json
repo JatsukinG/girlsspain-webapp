@@ -1,68 +1,52 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      // Constants
+      "@constants": [
+        "src/constants/index"
+      ],
+      // Components
+      "@components": [
+        "src/components/index"
+      ],
+      // Layouts
+      "@main-lay/*": [
+        "src/layouts/main/*"
+      ],
+      // Modules
+      "@home/*": [
+        "src/modules/home/*"
+      ],
+      "@models/*": [
+        "src/modules/models/*"
+      ]
     },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
-  "baseUrl": "./",
-  "paths": {
-    "@/*": [
-      "src/*"
+    "target": "ES2020",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
     ],
-    // constants
-    "@constants": [
-      "src/constants/index"
-    ],
-    // contexts
-    //    "@contexts/*": [
-    //      "src/contexts/*"
-    //    ],
-    // Atoms
-    //    "@atoms": [
-    //      "src/atoms/index"
-    //    ],
-    // Components
-    "@components": [
-      "src/components/index"
-    ],
-    // Hooks
-    //    "@hooks": [
-    //      "src/hooks/index"
-    //    ],
-    // Layouts
-    //    "@auth-lay/*": [
-    //      "src/layouts/auth/*"
-    //    ],
-    "@main-lay/*": [
-      "src/layouts/main/*"
-    ],
-    // Snippets
-    //    "@snippets/*": [
-    //      "src/snippets/*"
-    //    ],
-    // GraphQL
-    //    "@gql": [
-    //      "src/gql/index"
-    //    ],
-    //    "@types": [
-    //      "src/gql/graphql"
-    //    ],
-    // Modules
-    //    "@auth/*": [
-    //      "src/modules/auth/*"
-    //    ],
-    "@home/*": [
-      "src/modules/home/*"
-    ],
-    "@models/*": [
-      "src/modules/models/*"
-    ]
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "strict": true,
+    "useDefineForClassFields": true,
+    "noEmit": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

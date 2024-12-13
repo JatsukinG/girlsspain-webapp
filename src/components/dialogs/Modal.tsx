@@ -1,8 +1,8 @@
 import { type FC, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import NiceModal, { useModal } from '@ebay/nice-modal-react'
+import NiceModal, { useModal, type NiceModalHocProps } from '@ebay/nice-modal-react'
 
-interface Props {
+interface Props extends NiceModalHocProps {
 
 }
 

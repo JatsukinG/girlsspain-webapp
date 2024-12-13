@@ -1,6 +1,6 @@
-import models from '../../constants/models.json'
-import ModelFiltersSidebar from '../../modules/models/components/ModelFiltersSidebar.tsx'
-import ModelCard from '../../modules/home/components/ModelCard.tsx'
+import models from '@/constants/models.json'
+import ModelCard from '@home/components/ModelCard.tsx'
+import ModelFiltersSidebar from '@models/components/ModelFiltersSidebar.tsx'
 
 
 const ModelsPage = () => {

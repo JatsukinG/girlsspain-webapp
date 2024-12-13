@@ -1,5 +1,5 @@
 import type { FC, PropsWithChildren } from 'react'
-import Navbar from './Navbar.tsx'
+import Navbar from '@main-lay/Navbar.tsx'
 
 
 const MainLayout: FC<PropsWithChildren> = ({ children }) => {

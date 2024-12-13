@@ -1,21 +1,21 @@
-const items = [
+import { useNavigate } from 'react-router'
+
+type Item = { href: string, name: string }
+
+const items: Item[] = [
   {
-    href: '#home',
+    href: '/',
     name: 'Inicio',
   }, {
-    href: '#models',
+    href: '/models',
     name: 'Models',
-  }, {
-    href: '#another',
-    name: 'Another',
-  }, {
-    href: '#another-one',
-    name: 'Another One',
   },
 ]
 
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
   return (
       <header className="z-50 fixed top-0 left-0 w-full">
         <div className="relative w-full h-20 grid grid-rows-3">
@@ -29,11 +29,12 @@ const Navbar = () => {
               <ul className="flex gap-8">
                 {
                   items.map(item => (
-                      <li key={item.href}>
-                        <a href={item.href}
-                           className="font-bold text-sm text-white hover:text-fuchsia-500">
-                          {item.name}
-                        </a>
+                      <li
+                          key={item.href}
+                          onClick={() => navigate(item.href)}
+                          className="font-bold text-sm text-white hover:text-fuchsia-500 hover:cursor-pointer"
+                      >
+                        {item.name}
                       </li>
                   ))
                 }

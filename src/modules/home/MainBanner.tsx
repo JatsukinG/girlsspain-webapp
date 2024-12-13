@@ -1,10 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import banners from '../../constants/banners.json'
-import BannerItemSlide from './components/BannerItemSlide.tsx'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import banners from '@/constants/banners.json'
+import BannerItemSlide from '@home/components/BannerItemSlide.tsx'
 
 
 const MainBanner = () => {

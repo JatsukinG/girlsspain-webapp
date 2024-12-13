@@ -1,5 +1,5 @@
-import models from '../../constants/models.json'
-import ModelCard from './components/ModelCard.tsx'
+import models from '@/constants/models.json'
+import ModelCard from '@home/components/ModelCard.tsx'
 
 
 const TopModels = () => {
