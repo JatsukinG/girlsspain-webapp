@@ -1,15 +1,11 @@
-import MainLayout from './layout/main/index.jsx'
-import TopModels from './modules/main/TopModels.tsx'
-import MainBanner from './modules/main/MainBanner.tsx'
-import MainSearch from './modules/main/MainSearch.tsx'
+import { RouterProvider } from 'react-router'
+import router from './router'
 
 function App() {
   return (
-      <MainLayout>
-        <MainBanner/>
-        <MainSearch/>
-        <TopModels/>
-      </MainLayout>
+      <>
+        <RouterProvider router={router}/>
+      </>
   )
 }
 

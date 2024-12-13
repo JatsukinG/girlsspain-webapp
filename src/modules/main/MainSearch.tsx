@@ -1,52 +1,47 @@
-import {FaCity, FaSearch} from "react-icons/fa";
-import {TbGenderFemale} from "react-icons/tb";
+import { TbGenderFemale } from 'react-icons/tb'
+import { FaCity, FaSearch } from 'react-icons/fa'
+import { useNavigate } from 'react-router'
 
 const MainSearch = () => {
-    return (
-        <section className="py-16 container flex flex-col items-center">
-            <h2 className="text-5xl font-mono">
-                Bienvenidos a Girls España
-            </h2>
-            <p className="mt-8 text-center max-w-3xl text-base font-mono">
-                Esta es una comunidad donde cada chica comparte su esencia de manera única, cuidadosamente verificados
-                para garantizar autenticidad y confianza.
-            </p>
-            <div className="mt-8 mx-auto w-full rounded-full flex gap-2 bg-neutral-700 p-2">
-                <div className="flex-grow grid grid-cols-4 gap-2">
-                    <div className="p-4 text-xl font-semibold flex items-center gap-2 bg-neutral-800 rounded-l-full">
-                        <TbGenderFemale/>
-                        <span>
-                            Mujer
-                        </span>
-                    </div>
-                    <div className="p-4 text-xl font-semibold flex items-center gap-2 bg-neutral-800">
-                        <FaCity/>
-                        <span>
-                            Madrid
-                        </span>
-                    </div>
-                    <div className="p-4 text-xl font-semibold flex items-center gap-2 bg-neutral-800">
-                        <FaCity/>
-                        <span>
-                            Bernulia
-                        </span>
-                    </div>
-                    <div className="p-4 text-xl font-semibold flex items-center gap-2 bg-neutral-800">
-                        <FaCity/>
-                        <span>
-                            Madrid
-                        </span>
-                    </div>
-                </div>
-                <button className="flex items-center gap-2 bg-fuchsia-500 px-8 py-4 rounded-r-full font-bold text-xl">
-                    <span>
-                        Buscar
-                    </span>
-                    <FaSearch/>
-                </button>
-            </div>
-        </section>
-    );
-};
+  const navigate = useNavigate()
 
-export default MainSearch;
+  return (
+      <section className="py-16 container flex flex-col items-center">
+        <h2 className="text-4xl font-serif mb-6">
+          Encuentra tu conexión en <span className="text-fuchsia-500 font-extrabold">Girls España</span>
+        </h2>
+        <p className="text-center max-w-2xl text-md mb-8">
+          Descubre perfiles únicos cuidadosamente seleccionados, donde la autenticidad y la confianza son nuestra
+          prioridad.
+        </p>
+
+        <div
+            className="mt-8 w-full max-w-3xl bg-white shadow-xl rounded-lg p-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <div
+              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+            <TbGenderFemale className="text-fuchsia-400 text-2xl"/>
+            <span className="text-gray-800 font-medium">Mujer</span>
+          </div>
+          <div
+              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+            <FaCity className="text-blue-400 text-2xl"/>
+            <span className="text-gray-800 font-medium">Madrid</span>
+          </div>
+          <div
+              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+            <FaCity className="text-blue-400 text-2xl"/>
+            <span className="text-gray-800 font-medium">Barcelona</span>
+          </div>
+        </div>
+
+        <button
+            onClick={() => navigate('/models')}
+            className="mt-6 bg-fuchsia-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-fuchsia-600 transition duration-200 text-lg flex items-center gap-3">
+          <FaSearch className="text-xl"/>
+          <span>Iniciar Búsqueda</span>
+        </button>
+      </section>
+  )
+}
+
+export default MainSearch
