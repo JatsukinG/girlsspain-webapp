@@ -1,6 +1,6 @@
-import TopModels from '../modules/main/TopModels.tsx'
-import MainBanner from '../modules/main/MainBanner.tsx'
-import MainSearch from '../modules/main/MainSearch.tsx'
+import TopModels from '../modules/home/TopModels.tsx'
+import MainBanner from '../modules/home/MainBanner.tsx'
+import MainSearch from '../modules/home/MainSearch.tsx'
 
 
 const HomePage = () => {

@@ -2,6 +2,7 @@ import { TbGenderFemale } from 'react-icons/tb'
 import { FaCity, FaSearch } from 'react-icons/fa'
 import { useNavigate } from 'react-router'
 
+
 const MainSearch = () => {
   const navigate = useNavigate()
 

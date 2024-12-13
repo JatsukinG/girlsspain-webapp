@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import type { ModelNode } from '../../main/constants/types.ts'
+import type { ModelNode } from '../../../constants/types.ts'
 
 interface Props {
   model: ModelNode
