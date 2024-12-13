@@ -17,19 +17,19 @@ const MainSearch = () => {
         </p>
 
         <div
-            className="mt-8 w-full max-w-3xl bg-white shadow-xl rounded-lg p-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            className="w-full max-w-3xl bg-white shadow-xl rounded-lg p-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
           <div
-              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+              className="flex items-center gap-3 border border-gray-300 p-2 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
             <TbGenderFemale className="text-fuchsia-400 text-2xl"/>
             <span className="text-gray-800 font-medium">Mujer</span>
           </div>
           <div
-              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+              className="flex items-center gap-3 border border-gray-300 p-2 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
             <FaCity className="text-blue-400 text-2xl"/>
             <span className="text-gray-800 font-medium">Madrid</span>
           </div>
           <div
-              className="flex items-center gap-3 border border-gray-300 p-4 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
+              className="flex items-center gap-3 border border-gray-300 p-2 rounded-lg cursor-pointer hover:shadow-md transition duration-200">
             <FaCity className="text-blue-400 text-2xl"/>
             <span className="text-gray-800 font-medium">Barcelona</span>
           </div>

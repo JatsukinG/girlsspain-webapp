@@ -6,8 +6,8 @@ import MainSearch from '@home/MainSearch.tsx'
 const HomePage = () => {
   return (
       <>
-        <MainBanner/>
         <MainSearch/>
+        <MainBanner/>
         <TopModels/>
       </>
   )

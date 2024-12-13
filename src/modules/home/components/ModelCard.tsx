@@ -1,5 +1,7 @@
 import type { FC } from 'react'
 import type { ModelNode } from '@/constants/types.ts'
+import { clsx } from 'clsx'
+import { useNavigate } from 'react-router'
 
 interface Props {
   model: ModelNode
@@ -7,9 +9,15 @@ interface Props {
 
 
 const ModelCard: FC<Props> = ({ model }) => {
+  const navigate = useNavigate()
+
   return (
       <div
-          className="relative group w-full bg-neutral-800 aspect-[3/4] rounded-lg flex flex-col overflow-hidden font-serif"
+          className={clsx([
+            'relative group w-full bg-neutral-800 aspect-[3/4] rounded-lg flex flex-col overflow-hidden font-serif',
+            'hover:cursor-pointer',
+          ])}
+          onClick={() => navigate(`/models/${model.id}`)}
       >
         {/*Model image*/}
         <img

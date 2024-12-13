@@ -8,7 +8,7 @@ interface Props {
 
 const BannerItemSlide: FC<Props> = ({ banner }) => {
   return (
-      <div className="w-full h-96">
+      <div className="w-full h-72">
         <img
             alt=""
             src={banner.image}
