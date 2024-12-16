@@ -26,7 +26,7 @@ export default defineConfig({
       // '@gql': '/src/gql/index',
       // '@types': '/src/gql/graphql',
       // Modules
-      // '@auth': '/src/modules/auth',
+      '@auth': '/src/modules/auth',
       '@home': '/src/modules/home',
       '@models': '/src/modules/models',
     },
