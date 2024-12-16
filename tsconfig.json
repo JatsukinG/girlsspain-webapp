@@ -18,6 +18,9 @@
         "src/layouts/main/*"
       ],
       // Modules
+      "@auth/*": [
+        "src/modules/auth/*"
+      ],
       "@home/*": [
         "src/modules/home/*"
       ],

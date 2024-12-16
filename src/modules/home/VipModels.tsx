@@ -1,8 +1,8 @@
 import models from '@/constants/models.json'
-import TopModelCard from "@models/model/components/TopModelCard.tsx";
+import VIPModelCard from "@models/model/components/VipModelCard.tsx";
 
 
-const TopModels = () => {
+const VipModels = () => {
     return (
         <section className="py-16">
             <div className="container">
@@ -12,7 +12,7 @@ const TopModels = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
                     {
                         models.map(model => (
-                            <TopModelCard key={model.id} model={model}/>
+                            <VIPModelCard key={model.id} model={model}/>
                         ))
                     }
                 </div>
@@ -21,4 +21,4 @@ const TopModels = () => {
     )
 }
 
-export default TopModels
+export default VipModels

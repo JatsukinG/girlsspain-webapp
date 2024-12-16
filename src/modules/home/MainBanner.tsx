@@ -9,7 +9,7 @@ import BannerItemSlide from '@home/components/BannerItemSlide.tsx'
 
 const MainBanner = () => {
   return (
-      <section className="container">
+      <section>
         <Swiper
             loop
             centeredSlides
