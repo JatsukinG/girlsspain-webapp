@@ -17,6 +17,9 @@
       "@main-lay/*": [
         "src/layouts/main/*"
       ],
+      "@auth-lay/*": [
+        "src/layouts/main/*"
+      ],
       // Modules
       "@auth/*": [
         "src/modules/auth/*"

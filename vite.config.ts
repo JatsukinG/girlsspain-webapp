@@ -18,8 +18,8 @@ export default defineConfig({
       // Hooks
       // '@hooks': '/src/hooks/index',
       // Layouts
-      // '@auth-lay': '/src/layouts/auth',
       '@main-lay': '/src/layouts/main',
+      '@auth-lay': '/src/layouts/auth',
       // Snippets
       // '@snippets': '/src/snippets',
       // GraphQL

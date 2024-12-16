@@ -5,6 +5,7 @@ import MainLayout from '@/layouts/main'
 import LoginPage from '@/pages/auth/login'
 import ModelPage from '@/pages/models/model'
 import AuthProvider from '@auth/contexts/AuthProvider'
+import AuthLayout from '@/layouts/auth'
 
 
 const router = createBrowserRouter([
@@ -39,9 +40,11 @@ const router = createBrowserRouter([
   {
     path: '/auth',
     element: (
-        <AuthProvider>
-          <Outlet/>
-        </AuthProvider>
+        <AuthLayout>
+          <AuthProvider>
+            <Outlet/>
+          </AuthProvider>
+        </AuthLayout>
     ),
     children: [
       {
