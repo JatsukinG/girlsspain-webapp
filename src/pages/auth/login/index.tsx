@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
       <div className="flex flex-col items-center">
         <a href="#" className="mb-6 text-2xl font-semibold text-fuchsia-500">
-          GIRLS SPAIN
+          Agencia
         </a>
         <LoginForm/>
       </div>
